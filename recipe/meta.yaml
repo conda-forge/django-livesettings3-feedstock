@@ -1,5 +1,5 @@
 {% set name = "django-livesettings3" %}
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-livesettings3-{{ version }}.tar.gz
-  sha256: 933d5ca24ef891551f17a7a36cf5ec65962c1f59469b0eb8b56b392666b3d2b0
+  sha256: fa7bc762a6a65632b0d1afbb571a5697f3585c79c4958bba360a333b7b447a4b
 
 build:
   number: 0
