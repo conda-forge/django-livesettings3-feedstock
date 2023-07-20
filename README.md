@@ -1,11 +1,11 @@
-About django-livesettings3
-==========================
+About django-livesettings3-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-livesettings3-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/kunaldeo/django-livesettings3/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-livesettings3-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python 3 port of django-livesettings
 
