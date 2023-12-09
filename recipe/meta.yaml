@@ -1,7 +1,6 @@
 {% set name = "django-livesettings3" %}
 {% set version = "1.6.3" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,18 +10,18 @@ source:
   sha256: 4df2395a741b60172c4d17f1445dde71421a9118f83754805292610254daf5fc
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
+    - python >=3.8
     - pip
-    - python >=3.6
   run:
-    - django >=1.8,<3
+    - python >=3.8
+    - django >=1.8,<5
     - django-keyedcache3
-    - python >=3.6
 
 test:
   imports:
