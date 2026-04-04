@@ -1,27 +1,27 @@
 {% set name = "django-livesettings3" %}
-{% set version = "1.6.3" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django-livesettings3-{{ version }}.tar.gz
-  sha256: 4df2395a741b60172c4d17f1445dde71421a9118f83754805292610254daf5fc
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 24ab9b23852559639aeb51efe0721c7e8454d039a87576b989bf8438fcc7c4c7
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools   
+    - setuptools
   run:
     - python >={{ python_min }}
-    - django >=1.8
+    - django >=3.2,<6
     - django-keyedcache3
 
 test:
